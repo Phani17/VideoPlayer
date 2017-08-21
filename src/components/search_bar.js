@@ -1,8 +1,7 @@
 import React, {Component} from 'react'
 
-//every class based , must have a render method to produce HTML
 class SearchBar extends Component {
-  constructor(props){  //called whenever a new instance of this class is created
+  constructor(props){ 
     super(props);
     this.state={
       term:''
@@ -12,7 +11,7 @@ class SearchBar extends Component {
      this.setState({ term })
      this.props.onSearchTermChange(term)
   }
-  render() { //syntax for defining methods/functions in class, though it doesnt have : function(){} syntax
+  render() { 
     return (
       <div className="search-bar">
         <input
