@@ -1,6 +1,3 @@
-//Create a new component. this component should produce some HTML
-//Take this component's generated HTML and put it on the page(in the DOM)
-
 import React, {Component} from 'react'
 import ReactDOM from 'react-dom'
 import YTSearch from 'youtube-api-search'
@@ -46,7 +43,6 @@ class App extends Component{
   }
 }
 
-//never pass a direct class to render, we need to pass an instance of class to render function Hence <App />
 ReactDOM.render(
   <App />,
   document.querySelector('.container')
